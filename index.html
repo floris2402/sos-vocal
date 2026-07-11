@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - SOS vocal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #d32f2f;
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1976d2;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #1976d2;
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Politique de Confidentialité d'application "SOS vocal"</h1>
+    <p><strong>Dernière mise à jour :</strong> Juillet 2026</p>
+
+    <p>L'application <strong>SOS vocal</strong> est conçue pour assurer la sécurité des personnes âgées en leur permettant de déclencher une alerte par SMS en cas d'urgence ou de chute. Nous accordons une importance capitale à la confidentialité et à la protection de vos données privées. Cette page vous explique de manière transparente comment vos données sont traitées.</p>
+
+    <div class="highlight">
+        <strong>Engagement majeur :</strong> SOS vocal est une application payante et <strong>ne contient aucune publicité, aucun tracker publicitaire, ni aucun partage commercial de vos données</strong>. La sécurité de l'utilisateur est notre seule priorité.
+    </div>
+
+    <h2>1. Collecte et Utilisation des Données</h2>
+    <p>Toutes les données requises par l'application sont utilisées uniquement pour assurer le service d'alerte SOS. <strong>Aucune donnée personnelle n'est envoyée vers un serveur externe à des fins d'analyse ou de stockage tiers.</strong> Tout reste en local sur votre smartphone.</p>
+
+    <h2>2. Description détaillée des Autorisations (Permissions)</h2>
+    <p>Pour fonctionner correctement, notamment en arrière-plan ou lorsque le téléphone est en veille, SOS vocal utilise les permissions suivantes :</p>
+    <ul>
+        <li><strong>Envoi et réception de SMS (SEND_SMS, RECEIVE_SMS) :</strong> Utilisé pour envoyer un SMS d'alerte contenant votre position aux contacts de votre choix. Un SMS de validation est également envoyé avant d'enregistrer définitivement le numéro d'un proche dans l'application.</li>
+        <li><strong>Accès aux contacts (READ_CONTACTS) :</strong> Permet de sélectionner facilement les numéros de téléphone des proches à alerter directement depuis le répertoire du téléphone.</li>
+        <li><strong>Microphone (RECORD_AUDIO, FOREGROUND_SERVICE_MICROPHONE) :</strong> Nécessaire pour écouter l'alerte vocale. La reconnaissance vocale s'effectue localement sur le téléphone grâce à l'outil Vosk. L'application écoute uniquement pour détecter la phrase clé <em>"j'ai besoin d'aide"</em> et les confirmations <em>"oui"</em> ou <em>"non"</em>. Aucun flux audio n'est enregistré de façon permanente ni transmis sur Internet.</li>
+        <li><strong>Reconnaissance de l'activité et Capteurs (ACTIVITY_RECOGNITION) :</strong> Les capteurs de mouvement du téléphone sont sollicités en permanence afin de détecter instantanément une chute de l'utilisateur, à tout moment.</li>
+        <li><strong>Localisation (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, FOREGROUND_SERVICE_LOCATION) :</strong> La position de l'appareil est relevée régulièrement et mémorisée localement sur le téléphone. En cas d'alerte (vocale ou chute), la position est actualisée. Si la mise à jour échoue au moment précis de l'urgence, la dernière position connue enregistrée est envoyée par SMS aux proches pour vous localiser.</li>
+        <li><strong>Connexion Internet (INTERNET) :</strong> Cette permission est strictement limitée à deux actions : le premier téléchargement des fichiers de reconnaissance vocale Vosk lors du premier démarrage de l'application, et le fonctionnement des outils de cartographie pour la localisation. Aucun échange de données personnelles n'a lieu.</li>
+        <li><strong>Exécution en arrière-plan et démarrage (WAKE_LOCK, FOREGROUND_SERVICE, RECEIVE_BOOT_COMPLETED, REQUEST_IGNORE_BATTERY_OPTIMIZATIONS) :</strong> Permet à l'application de rester active de manière permanente, même en veille ou après un redémarrage du téléphone, pour garantir que la détection de chute et l'écoute SOS restent opérationnelles en continu.</li>
+    </ul>
+
+    <h2>3. Stockage et Sécurité des Données</h2>
+    <p>Les numéros de téléphone de vos proches, les configurations d'alertes et les coordonnées de localisation géographique sont stockés <strong>exclusivement dans la mémoire locale de votre appareil</strong>. Nous n'avons aucun accès à ces informations.</p>
+
+    <h2>4. Partage des Données avec des Tiers</h2>
+    <p>Nous ne vendons, n'échangeons ni ne transférons aucune information à des tiers. Les seules transmissions de données existantes sont les SMS envoyés directement depuis votre appareil vers les numéros de téléphone des proches que vous avez vous-même configurés.</p>
+
+    <h2>5. Modifications de la Politique de Confidentialité</h2>
+    <p>Nous pouvons mettre à jour notre politique de confidentialité de temps à autre pour refléter les changements techniques de l'application ou les exigences de Google Play. Nous vous invitons à consulter régulièrement cette page.</p>
+
+    <h2>6. Contact</h2>
+    <p>Pour toute question concernant cette politique de confidentialité ou l'utilisation de vos données, vous pouvez nous contacter à l'adresse e-mail suivante :</p>
+    <p><strong>[Ton adresse e-mail]</strong></p>
+
+    <footer>
+        <p>&copy; 2026 SOS vocal. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
